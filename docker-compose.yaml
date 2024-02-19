@@ -22,7 +22,7 @@ services:
       - "3000:3000"
 
   mongodb:
-    image: bitnami/mongodb:5.0
+    image: bitnami/mongodb:latest
     restart: unless-stopped
     volumes:
       - mongodb_data:/bitnami/mongodb
@@ -39,5 +39,4 @@ services:
 volumes:
   mongodb_data:
   rocketchat-uploads:
-
     
