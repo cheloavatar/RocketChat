@@ -22,7 +22,7 @@ services:
       - "3000:3000"
 
   mongodb:
-    image: bitnami/mongodb:6.0
+    image: bitnami/mongodb:5.0
     restart: unless-stopped
     volumes:
       - mongodb_data:/bitnami/mongodb
