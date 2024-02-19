@@ -3,7 +3,7 @@ version: '3.3'
 services:
   
   rocketchat:
-    image: registry.rocket.chat/rocketchat/rocket.chat:latest
+    image: registry.rocket.chat/rocketchat/rocket.chat:6.6.0
     restart: unless-stopped
     volumes:
       - rocketchat-uploads:/app/uploads
@@ -22,7 +22,7 @@ services:
       - "3000:3000"
 
   mongodb:
-    image: bitnami/mongodb:latest
+    image: bitnami/mongodb:6.0
     restart: unless-stopped
     volumes:
       - mongodb_data:/bitnami/mongodb
